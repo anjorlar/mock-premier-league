@@ -63,7 +63,7 @@ const fixtureSchema = new Schema(
         },
         status: {
             type: String,
-            enum: ["pending", "on-going", "completed", "abandoned"],
+            enum: ["pending", "completed"],
             default: "pending",
         },
         isDeleted: {
