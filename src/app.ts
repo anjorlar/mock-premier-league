@@ -16,12 +16,11 @@ import BaseRoute from "./routes/IndexRoute"
 const app: Application = express();
 
 //connects redis
-console.log(">>>>> app is up and running")
+
 //connects DB
 connectMongoDb()
 
 app.disable("x-powered-by");
-console.log(">>>>> app is up and running @@@@@222")
 
 app.use(helmet())
 app.use(cors())
