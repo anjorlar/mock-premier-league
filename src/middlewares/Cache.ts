@@ -23,16 +23,16 @@ export const cachedFixtures = (
         redisClient.get(`fixtures:${status}`, (err: any, fixtures: any) => {
             if (err) throw err;
             if (fixtures) {
-                const { limit, page } = req.query;
+                // const { limit, page } = req.query;
                 const dataArray = JSON.parse(fixtures);
-                const result = Utils.paginator(
-                    dataArray,
-                    parseInt(limit),
-                    parseInt(page)
-                );
+                // const result = Utils.paginator(
+                //     dataArray,
+                //     parseInt(limit),
+                //     parseInt(page)
+                // );
                 return httpResponse.successResponse(
                     res,
-                    result,
+                    dataArray,
                     "fixtures found",
                     httpCodes.OK
                 );
@@ -145,16 +145,16 @@ export const cachedTeams = async (
         redisClient.get("teams", async (err: any, teams: any) => {
             if (err) throw err;
             if (teams) {
-                const { limit, page } = req.query;
+                // const { limit, page } = req.query;
                 const dataArray = JSON.parse(teams);
-                const result = await Utils.paginator(
-                    dataArray,
-                    parseInt(limit),
-                    parseInt(page)
-                );
+                // const result = await Utils.paginator(
+                // dataArray,
+                // parseInt(limit),
+                // parseInt(page)
+                // );
                 return httpResponse.successResponse(
                     res,
-                    result,
+                    dataArray,
                     "teams found",
                     httpCodes.OK
                 );

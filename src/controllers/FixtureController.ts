@@ -211,7 +211,7 @@ export async function getAllFixtures(req: any, res: Response) {
                 : defaultEndDate,
             status: req.query.status
                 ? [req.query.status]
-                : ["pending", "on-going", "completed", "abandoned"],
+                : ["pending", "completed"],
         };
         const fixtures = await FixtureService.findFixtures(query);
         if (!fixtures.length) {
