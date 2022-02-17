@@ -4,7 +4,7 @@
   "description": "Mock of a football league",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/index.ts",
+    "start": "node dist/index.js",
     "dev": " nodemon src/index.ts",
     "build": "tsc -p .",
     "test": "set \"NODE_ENV=test\" && mocha -r ts-node/register src/test/**/*.test.ts --timeout=15000",
@@ -48,7 +48,7 @@
     "@types/cors": "2.8.12",
     "@types/express": "4.17.13",
     "@types/helmet": "4.0.0",
-    "@types/jest": "^27.4.0",
+    "@types/jest": "27.4.0",
     "@types/morgan": "1.9.3",
     "@types/node": "17.0.17",
     "@types/redis": "2.8.28",
