@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node dist/index.ts",
     "dev": " nodemon src/index.ts",
-    "build": "tsc -p",
+    "build": "tsc -p .",
     "test": "set \"NODE_ENV=test\" && mocha -r ts-node/register src/test/**/*.test.ts --timeout=15000",
     "test-watch": "nodemon --exec \"npm test\""
   },
