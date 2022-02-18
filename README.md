@@ -2,8 +2,11 @@
 
 Mock of the premier league where users can register and login and view teams and fixtures created by an admin.
 
-[Heroku url](https://mock-league.herokuapp.com)
-[Postman Collection can be found her](https://documenter.getpostman.com/view/7087675/UVkiTe9n)
+Heroku url can be found here :(https://mock-league.herokuapp.com)
+
+## Documentation
+To access the postman documentation click this url
+[Postman Collection](https://documenter.getpostman.com/view/7087675/UVkiTe9n)
 
 
 # Tools
