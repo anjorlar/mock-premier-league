@@ -1,29 +1,37 @@
 # mock-premier-league
 
-Mock of a fantasy football league where users can login and view teams and fixtures created by the admin
+Mock of the premier league where users can register and login and view teams and fixtures created by an admin.
 
-  - Hosted on heroku - https://mock-league.herokuapp.com
-  - Postman Collection can be found here https://documenter.getpostman.com/view/7087675/UVkiTe9n
+[Heroku url](https://mock-league.herokuapp.com)
+[Postman Collection can be found her](https://documenter.getpostman.com/view/7087675/UVkiTe9n)
 
 
 # Tools
-
+```sh
   - Node.js/TypeScript     
   - Express
   - MongoDB
   - Redis
   - Mocha
-  - heroku
+  - Heroku
   - Docker
+```
+### Requirements and Installation
 
-### Installation
+Mock Premier League requires [Node.js](https://nodejs.org/) v14 to run.
 
-Mock Premier League requires [Node.js](https://nodejs.org/) v14+ to run.
+- git clone this repo
+- Open the terminal and cd into the root of the cloned repo from the terminal
+- run npm install to install dependencies and devDependencies
+- Create a `.env` file in the root directory then check sample.env to set environment Variables values
+- run `npm start to start the app in production`
+- run `npm run dev to start this app in development mode`
 
-- Install the dependencies and devDependencies,
-- Create a `.env` file in the root directory then check sample.env to set Environment Variables values
+## Setting up Docker
 
-# To builds image and start containers
+- Install Docker Desktop [https://docs.docker.com/engine/install/]
+- Run the Docker Desktop on your local machine
+## To builds image and start containers
 
 - RUN `docker-compose up --build` [only use the --build whenever you make changes to Dockerfile or Package.json]
 
