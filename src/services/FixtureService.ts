@@ -24,14 +24,14 @@ const FixtureService = {
                 home: id,
                 kickOff: {
                     $gte: k,
-                    $lt: k,
+                    $lte: k,
                 },
             });
             const away = await FixtureModel.find({
                 away: id,
                 kickOff: {
                     $gte: k,
-                    $lt: k,
+                    $lte: k,
                 },
             });
 
